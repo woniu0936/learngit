@@ -1,0 +1,5 @@
+1、在某一个分支上面打tag的时候，此分支上面未提交的代码不会被打进这个tag
+2、获取某个tag的代码，使用git checkout tag_name 命令，但是这时候 git 可能会提示你
+  当前处于一个“detached HEAD" 状态，因为 tag 相当于是一个快照，是不能更改它的代码的
+3、如果要在 tag 代码的基础上做修改，你需要一个分支，使用git checkout -b branch_name tag_name 命令
+  这样会从 tag 创建一个分支，然后就和普通的 git 操作一样了
